@@ -117,7 +117,10 @@ body{
 	color: #FCBB08;
 }
 .header__content-decor{
-	margin-top: 180px;	
+	position: absolute;
+	right: 50%;
+	left: 50%;
+	bottom: 30px;
 }
 
 .about__inner{
@@ -367,7 +370,9 @@ body{
 	margin-top: 148px;
 	margin-bottom: 148px;
 }
-
+.video__img {
+	width: 100%;
+}
 
 .statistics{
 	max-width: 1440px;
@@ -376,6 +381,7 @@ body{
 .statistics__inner{
 	justify-content: space-around;
 	display: flex;
+	margin-bottom: 160px;
 }
 .statistics__item{
 	justify-content: space-around;
@@ -393,14 +399,18 @@ body{
 	color: #00B2A0;
 }
 
-.slider{
+.info{
 	overflow: hidden;
-  margin-top: 307px;
-  margin-left: 450px;
+  padding-top: 307px;
+  position: relative;
+  background-color: #F6F8FA;
+}
+.slider {
 	max-width: 607px;
 }
 .slider__items {
-	position: relative;
+	/*position: relative;*/
+	padding: 0;
 }
 .slider__item{
 	font-weight: 300;
@@ -430,24 +440,20 @@ body{
 	z-index: 1;
 	padding: 0;
 }
-/*.prevArrow {
-	left: 0;
-}
-.nextArrow {
-
-}*/
 .slick-prev{
-	left: 0;
+	left: 37px;
+	position: absolute;
 }
 .slick-next{
-	right: 0;
+	right: 37px;
+	position: absolute;
 }
 .slider-arrow{
   
 }
 .slick-dots{
 	list-style: none;
-	margin-left: -254px;
+	margin-left: -225px;
 	margin-bottom: 114px;
 }
 
@@ -480,6 +486,7 @@ body{
 /* ---PRICING -------------- */
 .pricing{
 	padding-top: 164px;
+	background-color: #F6F8FA;
 }
 .pricing__items{
 	padding-top: 91px;
@@ -563,10 +570,6 @@ body{
 .contacts__form-input::last-child(){
 	padding-top: 53px;
 }
-/*::placeholder {
-	color: red;
-	transform: translateY(-100px) translateY(50%);
-}*/
 ::-webkit-input-placeholder {
 	color: #B8B8B8;
 	transform: translateY(-10px) translateY(50%);
@@ -734,6 +737,24 @@ body{
 		height: auto;
 	}
 }
+
+@media (max-width: 1325px) {
+	.slider {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 1140px) {
+	.team__items {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.team__item {
+		margin-bottom: 10px;
+		margin-left: 10px;
+	}
+}
+
 @media (max-width: 960px) {
 	/*.menu__btn {
 		display: block;
@@ -828,5 +849,18 @@ body{
 	}
 	.portfolio__button:first-child {
 		padding-left: 10px;
+	}
+	.slick__arrows{
+		display: none;
+	}
+	.team__items {
+		/*justify-content: center;*/
+	}
+}
+
+@media (max-width: 470px) {
+	.statistics__inner{
+		display: flex;
+		flex-wrap: wrap;
 	}
 }
