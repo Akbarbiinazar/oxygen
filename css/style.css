@@ -786,6 +786,9 @@ body{
 		right: 10px;
 		top: 25px;
 	} */
+	.portfolio {
+		display: none;
+	}
 }
 
 @media (max-width: 823px) {
@@ -878,7 +881,23 @@ body{
 		display: block;
 		position: absolute;
 		right: 10px;
-		top: 25px;
+		top: 35px;
+	}
+	.logo{
+		margin-left: 32px;
+	}
+	.header__content-title {
+		font-size: 70px;
+		line-height: 92px;
+	}
+	.contact {
+		margin-top: 350px;
+	}
+	.contacts__form-input {
+		min-width: 400px;
+	}
+	.footer__social {
+		justify-content: space-around;
 	}
 }
 
@@ -900,4 +919,13 @@ body{
 	.portfolio__btn:first-child{
 		padding-left: 15%;
 	} 
+	.slick-dots {
+		margin-bottom: 80px;
+	}
+	.pricing__item {
+		min-width: 300px;
+	}
+	.contacts__form-input {
+		min-width: 310px;
+	}
 }
