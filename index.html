@@ -42,19 +42,19 @@
 								<a class="menu__link menu__link--active" href="#">HOME</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__link" href="#about__us-page">ABOUT US</a>
+								<a class="menu__link" href="#about__us" id="about__us-page">ABOUT US</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__link" href="#portfolio-page">PORTFOLIO</a>
+								<a class="menu__link" href="#portfolio" id="portfolio-page">PORTFOLIO</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__link" href="#our__team-page">OUR TEAM</a>
+								<a class="menu__link" href="#our__team" id="our__team-page">OUR TEAM</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__link" href="#blog-page">BLOG</a>
+								<a class="menu__link" href="#blog" id="blog-page">BLOG</a>
 							</li>
 							<li class="menu__list-item">
-								<a class="menu__link" href="#contact-page">CONTACT</a>
+								<a class="menu__link" href="#contact" id="contact-page">CONTACT</a>
 							</li>
 						</ul>
 					</nav>
@@ -75,7 +75,7 @@
 			</div>
 		</div>
 	</header>
-	<section class="about" id="about__us-page">
+	<section class="about" id="about__us">
 		<div class="container">
 			<div class="about__inner">
 				<div class="title">
@@ -167,7 +167,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio">
+	<section class="portfolio" id="portfolio">
 		<div class="container">
 			<div class="portfolio__head">
 				<div class="title">
@@ -210,7 +210,7 @@
 					<div class="portfolio__item-title">OCCA CUPIDATAT</div>
 					<div class="portfolio__item-descr">DESIGN</div>
 				</div>
-				<!-- <div class="portfolio__item-img box8">
+				<div class="portfolio__item-img box8">
 					<div class="portfolio__item-title">OCCA CUPIDATAT</div>
 					<div class="portfolio__item-descr">DESIGN</div>
 				</div>
@@ -218,11 +218,11 @@
 					<div class="portfolio__item-title">OCCA CUPIDATAT</div>
 					<div class="portfolio__item-descr">DESIGN</div>
 				</div>
-			</div> -->
+			</div>
 		</div>
 		<button class="portfolio__btn-all">VIEW MORE PROJECTS</button>
 	</section>
-	
+
 	<section class="video">
 		<div class="video__quotes">
 			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -318,7 +318,7 @@
 		</div>	
 	</section>
 	
-	<section class="team">
+	<section class="team" id="our__team">
 		<div class="container">
 			<div class="title">
 				Our Team
@@ -343,7 +343,7 @@
 		</div>
 	</section>
 
-	<section class="pricing">
+	<section class="pricing" id="blog">
 		<div class="container">
 			<div class="title">
 				Pricing Plans
@@ -403,8 +403,8 @@
 			</div>
 		</div>
 	</section>
-	
-	<section class="contact">
+
+	<section class="contact" id="contact">
 		<div class="container">
 			<div class="contact__content">
 				<div class="title">Get in Touch</div>
@@ -432,12 +432,16 @@
 					</a>
 				</div>
 				<div class="footer__social">
-					<a href="#" class="footer__social-link">FACEBOOK</a>
-					<a href="#" class="footer__social-link">TWITTER</a>
-					<a href="#" class="footer__social-link">GOOGLE+</a>
-					<a href="#" class="footer__social-link">BEHANCE</a>
-					<a href="#" class="footer__social-link">DRIBBLE</a>
-					<a href="#" class="footer__social-link">INSTAGRAM</a>
+					<div class="footer__left">
+						<a href="#" class="footer__social-link">FACEBOOK</a>
+						<a href="#" class="footer__social-link">TWITTER</a>
+						<a href="#" class="footer__social-link">GOOGLE+</a>
+					</div>
+					<div class="footer__right">
+						<a href="#" class="footer__social-link">BEHANCE</a>
+						<a href="#" class="footer__social-link">DRIBBLE</a>
+						<a href="#" class="footer__social-link">INSTAGRAM</a>
+					</div>
 				</div>
 				<div class="footer__contacts">
 					<div class="footer__adress">Mese Selimovica 52, Banja Luka - BiH</div>
@@ -450,7 +454,7 @@
 		<div class="footer__copy">
 			<div class="footer__text">@2015 Oxygen Theme</div>
 		</div>
-	</footer>
+	</footer> 
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
