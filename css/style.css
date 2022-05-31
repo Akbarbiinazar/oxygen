@@ -262,7 +262,7 @@ body{
 	height: 912px;	
 	width: 100%;
 	/*width: calc(100 * var(--vw, 1vw));*/
- /* margin-left: calc(50% - 50 * var(--vw, 1vw));*/
+ 	/* margin-left: calc(50% - 50 * var(--vw, 1vw));*/
 	padding-top: 103px;
 	grid-gap: 22px 22px;
 	grid-template-columns: repeat(auto-fit, minmax(343px, 1fr));
@@ -287,6 +287,7 @@ body{
 }
 .box3{
 	grid-area: 1 / 4 / 5 / 3;
+	
 }
 .box4{
 	grid-area: 5 / 3 / 15 / 3;
@@ -341,6 +342,32 @@ body{
 	font-size: 14px;
 	line-height: 17px;
 	letter-spacing: 1.2px;
+}
+.portfolio__item-img {
+	display: flex;
+	position: relative;
+}
+.portfolio__wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	left: 32%;
+	top: 32%;
+	right: 36%;
+	color: #fff;
+}
+.portfolio__item-title{
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 14px;
+}
+.portfolio__item-img:hover,
+.portfolio__item-img.hover {
+	background: linear-gradient(0deg, rgba(36, 33, 33, 0.8), rgba(36, 33, 33, 0.8)), #EDEDED;
+	border: 12px solid rgba(255, 255, 255, 0.147164);
+
 }
 .video{
 	margin-top: 130px;
@@ -438,9 +465,8 @@ body{
 	right: 37px;
 	position: absolute;
 }
-/* .slider-arrow{
+
   
-} */
 .slick-dots{
 	list-style: none;
 	margin-left: -225px;
@@ -452,9 +478,6 @@ body{
 	margin-top: 114px;
 	margin-bottom: 120px;
 }
-/* .title{
-	margin-top: 120px;
-} */
 .team__items{
 	margin-top: 102px;
 	display: flex;
