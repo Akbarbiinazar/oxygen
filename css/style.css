@@ -335,7 +335,7 @@ body{
 	padding-top: 114px;
 	margin:0 auto;
 	display:block;
-  position: relative;
+  	position: relative;
 	border: none;
 	background: none;
 	font-family: 'Montserrat', serif;
@@ -362,6 +362,13 @@ body{
 	font-size: 14px;
 	font-weight: 600;
 	line-height: 14px;
+}
+.portfolio__item-descr{
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 16px;
+	letter-spacing: 1px;
+	padding-top: 10px;
 }
 .portfolio__item-img:hover,
 .portfolio__item-img.hover {
